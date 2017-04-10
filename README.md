@@ -56,6 +56,7 @@ Furthermore, implementing multiple OAuth protocols for the different providers i
 
 The remainder of this tutorial will adhere to these three requirements. By using any Business Logic feature, in combination with the library, you can provide your users with a safe Sign-In via OAuth through Facebook, Google+, LinkedIn, and Twitter.
 
+---
 
 # Sample code : Using Oauth 2.0 In With AngularJS
 
@@ -64,14 +65,14 @@ Oauth Implicit Grant Type via OauthLib:
 `The implicit grant type is used to obtain access tokens (it does not support the issuance of refresh tokens) and is optimized for public clients known to operate a particular redirection URI. These clients are typically implemented in a browser using a scripting language such as JavaScript.
 Unlike the authorization code grant type, in which the client makes separate requests for authorization and for an access token, the client receives the access token as the result of the authorization request.`
 
-You’ll know the provider supports the implicit grant type when they make use of *response_type=token* rather than `response_type=code`.
+You’ll know the provider supports the implicit grant type when they make use of `response_type=token` rather than `response_type=code`.
 
-So there are going to be a few requirements to accomplish this in AngularJS:
+So there are going to be a few requirements to accomplish this in [AngularJS]:
 
-1. We are going to be using the <b>AngularJS UI-Router</b> library
+1. We are going to be using the *AngularJS UI-Router* library
 2. We are going to have a stand-alone index.html page with multiple templates
 3. We are going to have a stand-alone oauth_callback.html page with no AngularJS involvement
 
-With that said, let’s go ahead and create our project to look like the following:
+> With that said, let’s go ahead and create our project to look like the following:
 
 
