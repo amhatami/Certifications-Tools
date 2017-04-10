@@ -190,6 +190,4 @@ If you’re familiar with the `ng-cordova-oauth` library that I made, you’ll k
 In order to test this we need to be running our site from a domain or localhost.  We cannot test this via a **file://** URL.  If you’re on a Mac or Linux machine, the simplest thing to do is run `sudo python -m SimpleHTTPServer 80` since both these platforms ship with Python.  This will run your web application as localhost on port 80.
 
 A video version of this article can be seen below.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-gHHcv3Xy9s" frameborder="0" allowfullscreen></iframe>
-
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/embed/-gHHcv3Xy9s)
