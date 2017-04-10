@@ -69,10 +69,80 @@ You’ll know the provider supports the implicit grant type when they make use o
 
 So there are going to be a few requirements to accomplish this in [AngularJS]:
 
-1. We are going to be using the *AngularJS UI-Router* library
+1. We are going to be using the **AngularJS UI-Router** library
 2. We are going to have a stand-alone index.html page with multiple templates
 3. We are going to have a stand-alone oauth_callback.html page with no AngularJS involvement
 
-> With that said, let’s go ahead and create our project to look like the following:
+With that said, let’s go ahead and create our project to look like the following:
 
+* project root
+  * templates
+    * login.html
+    * secure.html
+  * js
+    * app.js
+  * index.html
+  * oauth_callback.html
+
+The **templates/login.html** page is where we will initialize the Oauth flow.  After reaching the **oauth_callback.html** page we will redirect to the **templates/secure.html** page which requires a successful sign in.
+
+Crack open your **index.html** file and add the following code:
+```html
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="example">
+        <div ui-view></div>
+    </body>
+</html>
+```
+
+Now it is time to add some very basic HTML to our **templates/login.html** and **templates/secure.html** pages:
+
+```html
+<h1>Login</h1>
+<button ng-click="login()">Login with Imgur</button>
+```
+
+```html
+<h1>Secure Web Page</h1>
+<b>Access Token: </b> {{accessToken}}
+```
+
+Not much left to do now.  Open your **js/app.js** file and add the following AngularJS code:
+```javascript
+var example = angular.module("example", ['ui.router']);
+ 
+example.config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+        .state('login', {
+            url: '/login',
+            templateUrl: 'templates/login.html',
+            controller: 'LoginController'
+        })
+        .state('secure', {
+            url: '/secure',
+            templateUrl: 'templates/secure.html',
+            controller: 'SecureController'
+        });
+    $urlRouterProvider.otherwise('/login');
+});
+ 
+example.controller("LoginController", function($scope) {
+ 
+    $scope.login = function() {
+        window.location.href = "https://api.imgur.com/oauth2/authorize?client_id=" + "CLIENT_ID_HERE" + "&response_type=token"
+    }
+ 
+});
+ 
+example.controller("SecureController", function($scope) {
+ 
+    $scope.accessToken = JSON.parse(window.localStorage.getItem("imgur")).oauth.access_token;
+ 
+});
+```
 
