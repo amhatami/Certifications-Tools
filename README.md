@@ -1,7 +1,5 @@
-# <i class="icon-file"></i> Tutorial-OAuth
+# Tutorial-OAuth
 How to Implement Sign-In via OAuth
-
-
 
 # This tutorial is broken down in the following sections: [![Build Status](https://travis-ci.org/andreareginato/oauth-ng.svg?branch=master)](https://travis-ci.org/andreareginato/oauth-ng)
 
@@ -66,7 +64,7 @@ Oauth Implicit Grant Type via OauthLib:
 `The implicit grant type is used to obtain access tokens (it does not support the issuance of refresh tokens) and is optimized for public clients known to operate a particular redirection URI. These clients are typically implemented in a browser using a scripting language such as JavaScript.
 Unlike the authorization code grant type, in which the client makes separate requests for authorization and for an access token, the client receives the access token as the result of the authorization request.`
 
-You’ll know the provider supports the implicit grant type when they make use of <font color="red">response_type=token</font> rather than `response_type=code`.
+You’ll know the provider supports the implicit grant type when they make use of *response_type=token* rather than `response_type=code`.
 
 So there are going to be a few requirements to accomplish this in AngularJS:
 
