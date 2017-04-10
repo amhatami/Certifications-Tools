@@ -146,3 +146,50 @@ example.controller("SecureController", function($scope) {
 });
 ```
 
+This long URL has the following components:
+
+| Parameter       | Description         |
+| ------------- |:-------------:| 
+| client_id      | The application id found in your Imgur developer dashboard | 
+| response_type     | Authorization grant or implicit grant type.  In our case token for implicit grant      | 
+
+The values will typically change per provider, but the parameters will usually remain the same.
+
+Now let’s dive into the callback portion.  After the Imgur login flow, it is going to send you to **http://localhost/oauth_callback.html** because that is what we’ve decided to enter into the Imgur dashboard.  Crack open your **oauth_callback.html** file and add the following source code:
+
+```html
+<html>
+    <head>
+        <script>
+            var callbackResponse = (document.URL).split("#")[1];
+            var responseParameters = (callbackResponse).split("&");
+            var parameterMap = [];
+            for(var i = 0; i < responseParameters.length; i++) {
+                parameterMap[responseParameters[i].split("=")[0]] = responseParameters[i].split("=")[1];
+            }
+            if(parameterMap.access_token !== undefined && parameterMap.access_token !== null) {
+                var imgur = {
+                    oauth: {
+                        access_token: parameterMap.access_token,
+                        expires_in: parameterMap.expires_in,
+                        account_username: parameterMap.account_username
+                    }
+                };
+                window.localStorage.setItem("imgur", JSON.stringify(imgur));
+                window.location.href = "http://localhost/index.html#/secure";
+            } else {
+                alert("Problem authenticating");
+            }
+        </script>
+    </head>
+    <body>Redirecting...</body>
+</html>
+```
+If you’re familiar with the `ng-cordova-oauth` library that I made, you’ll know much of this code was copied from it.  Basically what we’re doing is grabbing the current URL and parsing out all the token parameters that Imgur has provided us.  We are then going to construct an object with these parameters and serialize them into local storage.  Finally we are going to redirect into the secure area of our application.
+
+In order to test this we need to be running our site from a domain or localhost.  We cannot test this via a **file://** URL.  If you’re on a Mac or Linux machine, the simplest thing to do is run `sudo python -m SimpleHTTPServer 80` since both these platforms ship with Python.  This will run your web application as localhost on port 80.
+
+A video version of this article can be seen below.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-gHHcv3Xy9s" frameborder="0" allowfullscreen></iframe>
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/embed/-gHHcv3Xy9s)
