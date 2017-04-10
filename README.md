@@ -188,6 +188,3 @@ Now let’s dive into the callback portion.  After the Imgur login flow, it is g
 If you’re familiar with the `ng-cordova-oauth` library that I made, you’ll know much of this code was copied from it.  Basically what we’re doing is grabbing the current URL and parsing out all the token parameters that Imgur has provided us.  We are then going to construct an object with these parameters and serialize them into local storage.  Finally we are going to redirect into the secure area of our application.
 
 In order to test this we need to be running our site from a domain or localhost.  We cannot test this via a **file://** URL.  If you’re on a Mac or Linux machine, the simplest thing to do is run `sudo python -m SimpleHTTPServer 80` since both these platforms ship with Python.  This will run your web application as localhost on port 80.
-
-A video version of this article can be seen below.
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/embed/-gHHcv3Xy9s)
