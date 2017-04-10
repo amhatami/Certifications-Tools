@@ -1,4 +1,4 @@
-# Tutorial-OAuth
+# <i class="icon-file"></i> Tutorial-OAuth
 How to Implement Sign-In via OAuth
 
 
@@ -44,7 +44,36 @@ OAuth2.0 is similar to the OAuth1.0a protocol explained above, but the steps to 
 
 ![alt text](https://github.com/amhatami/Tutorial-OAuth/blob/master/img/OAuth20a_img.JPG?raw=true "OAuth1.0a steps")
 
+Both OAuth1.0a and OAuth2.0 use (part of) the application credentials to perform the flow described above.
+
+## OAuth and JavaScript
+Implementing OAuth in client-side JavaScript is challenging, mainly because:
+* The nature of OAuth forces the client to expose application credentials. This is a serious security vulnerability.
+* The provider may not support CORS. This makes it impossible for the client to communicate with the provider.
+
+Furthermore, implementing multiple OAuth protocols for the different providers is a lot of work. Instead, a simpler and safer solution is needed. One that:
+* Never reveals application credentials to the client.
+* Functions even if the provider does not support CORS.
+* Requires little effort to implement and is easy to use.
+
+The remainder of this tutorial will adhere to these three requirements. By using any Business Logic feature, in combination with the library, you can provide your users with a safe Sign-In via OAuth through Facebook, Google+, LinkedIn, and Twitter.
 
 
+# Sample code : Using Oauth 2.0 In With AngularJS
+
+Oauth Implicit Grant Type via OauthLib:
+
+`The implicit grant type is used to obtain access tokens (it does not support the issuance of refresh tokens) and is optimized for public clients known to operate a particular redirection URI. These clients are typically implemented in a browser using a scripting language such as JavaScript.
+Unlike the authorization code grant type, in which the client makes separate requests for authorization and for an access token, the client receives the access token as the result of the authorization request.`
+
+You’ll know the provider supports the implicit grant type when they make use of <font color="red">response_type=token</font> rather than `response_type=code`.
+
+So there are going to be a few requirements to accomplish this in AngularJS:
+
+1. We are going to be using the <b>AngularJS UI-Router</b> library
+2. We are going to have a stand-alone index.html page with multiple templates
+3. We are going to have a stand-alone oauth_callback.html page with no AngularJS involvement
+
+With that said, let’s go ahead and create our project to look like the following:
 
 
