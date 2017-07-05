@@ -6,9 +6,9 @@ The widely respected IT certification programs available through Cisco Career Ce
 
 ![Cisco Certifications](https://raw.githubusercontent.com/amhatami/Cisco/master/img/Cisco-Certification-Path.JPG)
 
-# It Certification Roadmap
+# IT Certification Roadmap
 ![IT Certifications Roadmap](https://raw.githubusercontent.com/amhatami/Cisco/master/img/It-Certification-roadmap.jpg)
 
-
-![IT Certifications Roadmap](https://raw.githubusercontent.com/amhatami/Cisco/master/img/it-certification-roadmap-1-638.jpg)
+# Microsoft Certification Roadmap
+![Microsoft Certification Roadmap](https://raw.githubusercontent.com/amhatami/Cisco/master/img/Microsoft-Certification-Roadmap.png)
 
