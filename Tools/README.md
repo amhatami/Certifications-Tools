@@ -1,4 +1,4 @@
-![repl.it](https://raw.githubusercontent.com/amhatami/Certifications-Tools/master/img/repl-ie-logo-small.png)(https://repl.it)
+[![repl.it](https://raw.githubusercontent.com/amhatami/Certifications-Tools/master/img/repl-ie-logo-small.png)](https://repl.it)
 
 https://repl.it
 # Repl.it (read-eval-print-loop)
@@ -13,7 +13,7 @@ We also support Emacs and Vim modes. You can change the mode by clicking on ... 
 ![repl shorthcuts](https://raw.githubusercontent.com/amhatami/Certifications-Tools/master/img/repl-shortcuts.JPG)
 
 
-![plunkr](https://raw.githubusercontent.com/amhatami/Certifications-Tools/master/img/plunker-logo.jpg)(https://plnkr.co/edit/)
+[![plunkr](https://raw.githubusercontent.com/amhatami/Certifications-Tools/master/img/plunker-logo.jpg)](https://plnkr.co/edit/)
 
 https://plnkr.co/edit/
 # plnkr.co ()
