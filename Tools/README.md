@@ -44,3 +44,7 @@ Plunker is an online community for creating, collaborating on and sharing your w
 *And many more to come...
 
 
+
+
+https://regex101.com/r/pN4oG0/1
+http://eloquentjavascript.net/09_regexp.html
