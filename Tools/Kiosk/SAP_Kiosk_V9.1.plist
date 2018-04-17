@@ -2,110 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>variants</key>
-	<dict>
-		<key>https://dl.dropboxusercontent.com/s/k51zyo16s6cqj7v/SAP-Kiosk_V9.1.ipa</key>
+	<key>items</key>
+	<array>
 		<dict>
-			<key>limitUncompressedInitialPrefetchedODR</key>
-			<integer>2147483648</integer>
-			<key>onDemandResourcesAssetPacks</key>
-			<dict/>
-			<key>sizeCompressedApp</key>
-			<integer>41446480</integer>
-			<key>sizeCompressedAppAndODR</key>
-			<integer>41446480</integer>
-			<key>sizeCompressedODR</key>
-			<integer>0</integer>
-			<key>sizeUncompressedApp</key>
-			<integer>43013405</integer>
-			<key>sizeUncompressedAppAndODR</key>
-			<integer>43013405</integer>
-			<key>sizeUncompressedInitialPrefetchedODR</key>
-			<integer>0</integer>
-			<key>sizeUncompressedInitialPrefetchedODRExceedsLimit</key>
-			<false/>
-			<key>sizeUncompressedODR</key>
-			<integer>0</integer>
-			<key>tagsUncompressedInitialPrefetchedODR</key>
-			<array/>
-			<key>variantIds</key>
+			<key>assets</key>
 			<array>
-				<string>iPad6,11</string>
-				<string>iPad6,12</string>
-				<string>iPad4,1</string>
-				<string>iPad4,2</string>
-				<string>iPad4,3</string>
-				<string>iPad5,3</string>
-				<string>iPad5,4</string>
-				<string>iPad7,4</string>
-				<string>iPad7,3</string>
-				<string>iPad6,7</string>
-				<string>iPad6,8</string>
-				<string>iPad7,1</string>
-				<string>iPad7,2</string>
-				<string>iPad6,3</string>
-				<string>iPad6,4</string>
-				<string>iPad4,5</string>
-				<string>iPad4,6</string>
-				<string>iPad4,4</string>
-				<string>iPad4,7</string>
-				<string>iPad4,8</string>
-				<string>iPad4,9</string>
-				<string>iPad5,1</string>
-				<string>iPad5,2</string>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://dl.dropboxusercontent.com/s/k51zyo16s6cqj7v/SAP-Kiosk_V9.1.ipa</string>
+				</dict>
 			</array>
-			<key>variantNames</key>
-			<array>
-				<string>iPad (5th generation)</string>
-				<string>iPad (5th generation)</string>
-				<string>iPad Air</string>
-				<string>iPad Air</string>
-				<string>iPad Air</string>
-				<string>iPad Air 2</string>
-				<string>iPad Air 2</string>
-				<string>iPad Pro (10.5-inch)</string>
-				<string>iPad Pro (10.5-inch)</string>
-				<string>iPad Pro (12.9-inch)</string>
-				<string>iPad Pro (12.9-inch)</string>
-				<string>iPad Pro (12.9-inch) (2nd generation)</string>
-				<string>iPad Pro (12.9-inch) (2nd generation)</string>
-				<string>iPad Pro (9.7-inch)</string>
-				<string>iPad Pro (9.7-inch)</string>
-				<string>iPad mini 2</string>
-				<string>iPad mini 2</string>
-				<string>iPad mini 2</string>
-				<string>iPad mini 3</string>
-				<string>iPad mini 3</string>
-				<string>iPad mini 3</string>
-				<string>iPad mini 4</string>
-				<string>iPad mini 4</string>
-			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>ca.hatami.amir.SAP-Kiosk-V9-11</string>
+				<key>bundle-version</key>
+				<string>1.0</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>SAP Kiosk V9.11</string>
+			</dict>
 		</dict>
-		<key>https://dl.dropboxusercontent.com/s/k51zyo16s6cqj7v/SAP-Kiosk_V9.1.ipa</key>
-		<dict>
-			<key>limitUncompressedInitialPrefetchedODR</key>
-			<integer>2147483648</integer>
-			<key>onDemandResourcesAssetPacks</key>
-			<dict/>
-			<key>sizeCompressedApp</key>
-			<integer>41446394</integer>
-			<key>sizeCompressedAppAndODR</key>
-			<integer>41446394</integer>
-			<key>sizeCompressedODR</key>
-			<integer>0</integer>
-			<key>sizeUncompressedApp</key>
-			<integer>43012631</integer>
-			<key>sizeUncompressedAppAndODR</key>
-			<integer>43012631</integer>
-			<key>sizeUncompressedInitialPrefetchedODR</key>
-			<integer>0</integer>
-			<key>sizeUncompressedInitialPrefetchedODRExceedsLimit</key>
-			<false/>
-			<key>sizeUncompressedODR</key>
-			<integer>0</integer>
-			<key>tagsUncompressedInitialPrefetchedODR</key>
-			<array/>
-		</dict>
-	</dict>
+	</array>
 </dict>
 </plist>
