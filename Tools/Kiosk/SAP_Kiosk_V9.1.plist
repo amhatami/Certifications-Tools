@@ -11,19 +11,19 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://dl.dropboxusercontent.com/s/k51zyo16s6cqj7v/SAP-Kiosk_V9.1.ipa</string>
+					<string>https://dl.dropboxusercontent.com/s/byx5rklfb71jfgn/SAP-Kiosk_V11.1.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>ca.hatami.amir.SAP-Kiosk-V9-11</string>
+				<string>ca.hatami.amir.SAP-Kiosk-V11-1</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>SAP Kiosk V10.3</string>
+				<string>SAP Kiosk V11.1</string>
 			</dict>
 		</dict>
 	</array>
