@@ -17,13 +17,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.centurytrail.education.iOS-Swift-ARChangeEyeIris</string>
+				<string>com.centurytrail.education.TestRun</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>iOS-Swift-ARChangeEyeIris V1.1</string>
+				<string>Test Run V1.1</string>
 			</dict>
 		</dict>
 	</array>
